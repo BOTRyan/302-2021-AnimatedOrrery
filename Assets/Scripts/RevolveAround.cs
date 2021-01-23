@@ -9,7 +9,13 @@ public class RevolveAround : MonoBehaviour
     public float speed = 1;
 
     private float age = 0;
-    
+    private float rotY = 0;
+
+    private void Start()
+    {
+        age = Random.Range(0, 10);
+    }
+
     void Update()
     {
         age += Time.deltaTime;
@@ -17,5 +23,14 @@ public class RevolveAround : MonoBehaviour
         Vector3 offset = AnimMath.Revolve(radius, age, speed);
 
         transform.position = target.position + offset;
+
+        rotY += Time.deltaTime * speed;
+
+        transform.rotation = Quaternion.Euler(0, rotY, 0);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(target.position, radius);
     }
 }
