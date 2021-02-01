@@ -1,0 +1,11 @@
+Copyright 2021 by Ryan O'Connor
+
+This program runs an Orrery, allowing players to look up planets of a made up solar system.
+
+Credits:
+
+Coding - Ryan O'Connor
+Button Sounds - https://freesound.org/people/julius_galla/sounds/331305/
+Ambient Music - https://freesound.org/people/Prosser/sounds/233995/
+Skybox - https://wwwtyro.github.io/space-3d/
+Planet Textures - https://www.solarsystemscope.com/textures/
