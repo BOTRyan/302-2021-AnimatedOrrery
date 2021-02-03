@@ -67,7 +67,7 @@ public class HUDController : MonoBehaviour
         {
             GameManager.timeSpeed = -amt;
             GameManager.rewind = true;
-            textTimeScale.text = System.Math.Round(GameManager.timeSpeed, 1).ToString();
+            textTimeScale.text = System.Math.Round(-GameManager.timeSpeed, 1).ToString();
 
         }
         else
